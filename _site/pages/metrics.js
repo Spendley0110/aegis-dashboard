@@ -70,7 +70,7 @@ export async function renderMetricsPage() {
 
         <h3>Average Run Time By Type</h3>
 
-        <table class="aegis-table">
+        <table border="1">
             <thead>
                 <tr>
                     <th>Job Type</th>
@@ -84,7 +84,7 @@ export async function renderMetricsPage() {
 
         <h3>Job Type Counts</h3>
 
-        <table class="aegis-table">
+        <table border="1">
             <thead>
                 <tr>
                     <th>Job Type</th>

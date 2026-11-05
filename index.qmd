@@ -1,4 +1,3 @@
-
 ---
 title: "Aegis Dashboard"
 page-layout: full

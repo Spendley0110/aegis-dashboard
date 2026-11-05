@@ -51,7 +51,7 @@ export async function renderBatchesPage() {
             ${toggleText}
         </button>
 
-        <table class="aegis-table">
+        <table border="1">
         <thead>
             <tr>
                 <th>ID</th>

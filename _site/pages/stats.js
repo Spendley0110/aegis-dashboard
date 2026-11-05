@@ -38,7 +38,7 @@ export async function renderStatsPage() {
 
         <h3>Average Duration By Type</h3>
 
-        <table class="aegis-table">
+        <table border="1">
             <thead>
                 <tr>
                     <th>Job Type</th>

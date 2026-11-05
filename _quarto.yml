@@ -5,6 +5,8 @@ project:
     - components/**
     - pages/**
     - api_base.js
+  preview:
+    port: 7247
 
 website:
   title: "Aegis Dashboard"

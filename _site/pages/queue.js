@@ -22,7 +22,7 @@ export async function renderQueuePage() {
     }
 
     return `
-    <table class="aegis-table">
+    <table border = 1>
         <thead>
             <tr>
                 <th>Job ID</th>

@@ -22,7 +22,7 @@ export async function renderHistoryPage() {
     }
 
     return `
-    <table class="aegis-table">
+    <table border="1">
         <thead>
             <tr>
                 <th>ID</th>
