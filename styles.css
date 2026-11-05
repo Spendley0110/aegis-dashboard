@@ -1,1 +1,53 @@
-/* css styles */
+/* Aegis dashboard table formatting */
+
+#dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#dashboard th,
+#dashboard td {
+    border: 1px solid #cbd5e1;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#dashboard thead th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+#dashboard tbody tr:hover {
+    background-color: rgba(148, 163, 184, 0.10);
+}
+
+/* Shared dashboard table styling */
+
+table.aegis-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+table.aegis-table th,
+table.aegis-table td {
+    border: 1px solid #cbd5e1;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table.aegis-table thead th {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+table.aegis-table tbody tr:nth-child(even) {
+    background-color: rgba(148, 163, 184, 0.08);
+}
+
+table.aegis-table tbody tr:hover {
+    background-color: rgba(148, 163, 184, 0.18);
+}

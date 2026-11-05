@@ -1,21 +1,22 @@
 project:
   type: website
+  resources:
+    - js/**
+    - components/**
+    - pages/**
+    - api_base.js
 
 website:
-  title: "aegis-dash"
+  title: "Aegis Dashboard"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Dashboard
+      - href: about.qmd
+        text: About
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
-    toc: true
-
-
-
+    toc: false

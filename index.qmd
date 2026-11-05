@@ -1,7 +1,28 @@
+
 ---
-title: "aegis-dash"
+title: "Aegis Dashboard"
+page-layout: full
+toc: false
 ---
 
-This is a Quarto website.
+::: {#dashboard}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: {#navbar}
+:::
+
+::: {#filterbar}
+:::
+
+::: {#content}
+Loading dashboard...
+:::
+
+::: {#statusbar}
+Last refresh: Never
+:::
+
+:::
+
+```{=html}
+<script type="module" src="js/router.js"></script>
+```
