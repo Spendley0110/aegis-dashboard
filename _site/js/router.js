@@ -23,20 +23,34 @@ async function route() {
 
     let html;
 
-    if (page === "queue") {
-        html = await renderQueuePage();
-    } else if (page === "history") {
-        html = await renderHistoryPage();
-    } else if (page === "batches") {
-        html = await renderBatchesPage();
-    } else if (page === "stats") {
-        html = await renderStatsPage();
-    } else if (page === "metrics") {
-        html = await renderMetricsPage();
-    } else if (page === "settings") {
-        html = renderSettingsPage();
-    } else {
-        html = `<h2>${page}</h2>`;
+    try {
+        if (page === "queue") {
+            html = await renderQueuePage();
+        } else if (page === "history") {
+            html = await renderHistoryPage();
+        } else if (page === "batches") {
+            html = await renderBatchesPage();
+        } else if (page === "stats") {
+            html = await renderStatsPage();
+        } else if (page === "metrics") {
+            html = await renderMetricsPage();
+        } else if (page === "settings") {
+            html = renderSettingsPage();
+        } else {
+            html = `<h2>${page}</h2>`;
+        }
+    } catch (error) {
+        console.error("Dashboard route failed:", error);
+
+        html = `
+            <section class="dashboard-error" role="alert">
+                <h2>Unable to load dashboard data</h2>
+                <p>
+                    The backend API may be unavailable.
+                    Please check your connection and try again.
+                </p>
+            </section>
+        `;
     }
 
     // Ignore a slower render if a newer route or refresh has started.
